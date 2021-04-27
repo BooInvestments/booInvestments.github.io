@@ -1,0 +1,71 @@
+body {
+    background-color: #4eb6e6;
+}
+#portfolio {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding: 30px;
+    font-size: 50px;;
+}
+.total {
+    width:300px;
+    height:75px;
+    border: 2px black solid;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+#firstCol {
+    padding:0;
+    margin: 0;
+}
+#secondCol {
+    padding:0;
+    margin: 0;
+}
+#name {
+    width:300px;
+    height:75px;
+    border: 2px black solid;
+    float: right;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+#totalRow {
+    padding: 20px;
+    justify-content: center;
+}
+#totalPortfolio {
+    
+    width:700px;
+    height:75px;
+    border: 2px black solid;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+#buttonDiv {
+    padding-top: 40px;
+    justify-content: center;
+}
+#piggy {
+    width: 100px;
+}
+#homeBtn {
+    background-color: lightblue;
+    font-weight: bold;
+}
+#homeBtn:hover {
+    background-color: rgb(26, 182, 235);
+    font-weight: bold;
+    
+}
+#tickers {
+    overflow-y: auto;
+    height: 60vh;
+}
+.container {
+    width: 100vw;
+}

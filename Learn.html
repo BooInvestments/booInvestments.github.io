@@ -1,0 +1,179 @@
+﻿<!-- https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp carousel code citation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BOO Learn</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      margin-left:25%;
+      margin-right: 25%; 
+  }
+
+  #learn{
+    font-size: 50px;
+    text-align: center;
+    font: HelveticaNeue-Light; 
+    font-weight:300;
+  }
+  
+  #center{
+    width: 100%;
+  }
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .column {
+    /* float: right; */
+    width: 33.33%;
+    padding: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .buttons{
+      justify-content: center;
+      text-align: center;
+  }
+
+  .label{
+    text-align: center;
+    font-size: 30px;
+    font: HelveticaNeue-Light; 
+    font-weight:300;
+  }
+
+  .video_previews{
+      height: 350px;
+      border: transparent;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+  </style>
+</head>
+<body style="background: #4eb6e6;">
+    <div class="topnav" style="background-color: #333; overflow: hidden;">
+        <a href="index.html">Home</a>
+        <a href="Learn.html">Learn</a>
+        <a href="stocks.html">Stocks</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="Brokers.html">Brokers</a>
+        <a href="https://finance.yahoo.com/">News</a>
+    </div>
+    <div class="center">
+        <h1 id="learn">Learn <img src="learnImages/academics.png" alt="academics" style="height: 100px; width: 160px;"></h1>
+    </div>
+
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false" style="width: 100%; height: 50%">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active" style="filter: invert(1);"></li>
+            <li data-target="#demo" data-slide-to="1" style="filter: invert(1);"></li>
+            <li data-target="#demo" data-slide-to="2" style="filter: invert(1);"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/wvXDB9dMdEo"></iframe>
+                        <p class="label">Finance 101</p>
+                    </div>
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/Ti4BCkxciVs"></iframe>
+                        <p class="label">Stocks 101</p>
+                    </div>
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/yRr0_gJ-3mI"></iframe>
+                        <p class="label">Investing 101</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/yRr0_gJ-3mI"></iframe>
+                        <p class="label">Investing 101</p>
+                    </div>
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/wvXDB9dMdEo"></iframe>
+                        <p class="label">Finance 101</p>
+                    </div>
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/Ti4BCkxciVs"></iframe>
+                        <p class="label">Stocks 101</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/Ti4BCkxciVs"></iframe>
+                        <p class="label">Stocks 101</p>
+                    </div>
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/yRr0_gJ-3mI"></iframe>
+                        <p class="label">Investing 101</p>
+                    </div>
+                    <div class="column">
+                        <iframe class="video_previews" src="https://www.youtube.com/embed/wvXDB9dMdEo"></iframe>
+                        <p class="label">Finance 101</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev" style="margin-top: 50px;">
+            <span class="carousel-control-prev-icon" style="filter: invert(1);"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon" style="filter: invert(1);"></span>
+        </a>
+    </div>
+
+    <div class="buttons">
+        <button type="button" class="btn btn-info" style=" color: black; background-color: #e6b207;">&#128712</button>
+        <button type="button" class="btn btn-info" style="background-color: #e6b207;">&#128264;</button>
+    </div>
+</body>
+</html>
