@@ -1,1 +1,0 @@
-Run index.html using chrome browser
